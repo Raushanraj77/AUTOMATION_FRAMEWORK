@@ -1,0 +1,5 @@
+passed|Login with invalid credentials -- @1.2 |/Users/maa/Documents/AUTOMATION_FRAMEWORK/reports/attempt_results/attempt1/00895cb6-669a-43a4-8f08-32a3e0b882ce-result.json
+passed|Login with invalid credentials -- @1.1 |/Users/maa/Documents/AUTOMATION_FRAMEWORK/reports/attempt_results/attempt1/9534a716-68c4-48ef-ad3a-f62b4b0331cd-result.json
+failed|Login with empty password|/Users/maa/Documents/AUTOMATION_FRAMEWORK/reports/attempt_results/attempt1/9636f9d1-3240-4b0a-9db7-69fb36b12dc2-result.json
+passed|Login with empty username|/Users/maa/Documents/AUTOMATION_FRAMEWORK/reports/attempt_results/attempt1/bf7768fc-6eed-4a40-a2fe-35fb85743fd9-result.json
+passed|Login with valid credentials|/Users/maa/Documents/AUTOMATION_FRAMEWORK/reports/attempt_results/attempt1/c7ad51f0-220f-46de-a47c-1e64cdbb56ff-result.json

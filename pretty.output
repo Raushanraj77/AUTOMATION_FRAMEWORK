@@ -1,0 +1,47 @@
+Feature: Validate the login feature # features/login.feature:1
+
+  Background:   # features/login.feature:3
+
+  @valid_login
+  Scenario: Login with valid credentials             # features/login.feature:9
+    When Open the url                                # None
+    Then The login portal has been opened            # None
+    Given Provide the username and password          # None
+    When Click on the Login button                   # None
+    Then Login is successful and dashboard is opened # None
+    And Close the browser                            # None
+
+  Scenario Outline: Login with invalid credentials -- @1.1        # features/login.feature:22
+    When Open the url                                             # None
+    Then The login portal has been opened                         # None
+    Given Provide the username "abcd" and password "1234"         # None
+    When Click on the Login button                                # None
+    Then Login is failed and invlid credential error is displayed # None
+    And Close the browser                                         # None
+
+  Scenario Outline: Login with invalid credentials -- @1.2        # features/login.feature:23
+    When Open the url                                             # None
+    Then The login portal has been opened                         # None
+    Given Provide the username "35473" and password "afsdf"       # None
+    When Click on the Login button                                # None
+    Then Login is failed and invlid credential error is displayed # None
+    And Close the browser                                         # None
+
+  Scenario: Login with empty username                          # features/login.feature:25
+    When Open the url                                          # None
+    Then The login portal has been opened                      # None
+    Given Provide the password "admin123"                      # None
+    When Click on the Login button                             # None
+    Then Login is failed and empty username error is displayed # None
+    And Close the browser                                      # None
+
+  Scenario: Login with empty password                          # features/login.feature:31
+    When Open the url                                          # features/steps/loginsteps.py:26
+    Then The login portal has been opened                      # features/steps/loginsteps.py:36
+    Given Provide the username "Admin"                         # features/steps/loginsteps.py:90
+    When Click on the Login button                             # features/steps/loginsteps.py:61
+    Then Login is failed and empty password error is displayed # features/steps/loginsteps.py:104
+      Assertion Failed: Test is failed in validate empty password
+
+    And Close the browser                                      # None
+
